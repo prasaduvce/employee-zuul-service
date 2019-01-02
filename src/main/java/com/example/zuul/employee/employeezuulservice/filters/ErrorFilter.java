@@ -21,7 +21,7 @@ public class ErrorFilter extends ZuulFilter {
 
 	@Override
 	public Object run() throws ZuulException {
-		System.out.println("Using route filter ===> ");
+		System.out.println("Using Error filter ===> ");
 		return null;
 	}
 }

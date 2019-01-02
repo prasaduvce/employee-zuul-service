@@ -27,6 +27,7 @@ public class PreFilter extends ZuulFilter {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
 		System.out.println("Request Method : "+request.getMethod()+" Request URL : "+request.getRequestURL().toString());
+		request.setAttribute("user", "Ram");
 		return null;
 	}
 }
